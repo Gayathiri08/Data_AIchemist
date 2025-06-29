@@ -1,24 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🧪 Data Alchemist
 
-## Getting Started
+**Data Alchemist** is an AI-powered data grid and scheduling web application built using **Next.js**, **TypeScript**, and smart validation logic. It enables non-technical users to upload, edit, validate, and prioritize CSV/XLSX data through an intuitive interface.
 
-First, run the development server:
+---
+
+## 🧠 Features
+
+### ✅ Milestone 1: Smart Data Upload & Validation
+- Upload `clients.csv`, `workers.csv`, and `tasks.csv` via drag-and-drop
+- Inline editable data grid
+- Real-time validation of:
+  - Missing columns
+  - Duplicate IDs
+  - Invalid ranges (e.g., priority levels)
+  - JSON field parsing
+  - List format checks
+
+### 📏 Milestone 2: Rule Engine & Prioritization
+- Add **business rules** like co-running tasks or qualification constraints
+- Adjustable sliders for:
+  - **Priority vs Fairness**
+  - **Efficiency vs Cost**
+- Export final schedule configuration to JSON
+
+### 🗣️ Milestone 3: Natural Language Filtering (AI-Powered)
+- Type queries like:
+  - `"Duration > 2 and PreferredPhases includes 3"`
+  - `"QualificationLevel >= 4 and MaxLoadPerPhase < 5"`
+- AI translates the sentence into a filter expression dynamically
+
+---
+
+## 🚀 Deployment
+
+You can access the deployed application over your local network at:
+
+### 🔗 [http://192.168.0.3:3000/](http://192.168.0.3:3000/)
+
+> ⚠️ Make sure your device is connected to the **same Wi-Fi** as the host PC to access the app from other devices.
+
+---
+
+## 🛠️ Getting Started (Local Setup)
+
+### 1. Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/Gayathiri08/Data_AIchemist.git
+cd Data_AIchemist
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
 
